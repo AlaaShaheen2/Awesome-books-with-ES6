@@ -6,14 +6,14 @@ class BooksDetials {
   constructor(title, author) {
     this.title = title;
     this.author = author;
-    this.newbooks =[];
-    if (localStorage.newbooks){
-      this.newbooks= JSON.parse(localStorage.getItem('newbooks'))
+    this.newbooks = [];
+    if (localStorage.newbooks) {
+      this.newbooks = JSON.parse(localStorage.getItem('newbooks'));
     }
   }
 
-  elementAdd(){
-    let elms='';
+  elementAdd() {
+    let elms = '';
     for (let i = 0; i < this.newbooks.length; i += 1) {
       const itm = `
           <ul class="books-element">
@@ -35,7 +35,8 @@ class BooksDetials {
     bookName.value = '';
     authorName.value = '';
   }
-  static Delete (event) {
+
+  static Delete(event) {
     const itemind = event.currentTarget.dataset.index;
     this.newbooks.splice(parseInt(itemind, 5), 1);
     this.elementAdd();
@@ -43,4 +44,3 @@ class BooksDetials {
   }
 }
 export default BooksDetials;
-

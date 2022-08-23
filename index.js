@@ -4,11 +4,11 @@ import Time from './modules/time.js';
 
 const moreBooks = new BooksDetials();
 moreBooks.elementAdd();
-const addBtn = document.querySelector('.add-btn');
-addBtn.addEventListener('click', () => {
+const AddBtn = document.querySelector('.add-btn');
+AddBtn.addEventListener('click', () => {
   moreBooks.bookNew();
 });
-const show = new active();
-show.showAllBooks();
+const Show = new active();
+Show.showAllBooks();
 const todaystime = new Time();
 todaystime.ShowTime();

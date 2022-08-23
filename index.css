@@ -12,31 +12,34 @@ body {
 .navbar {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  padding: 10px 20px;
-  min-height: 80px;
+  padding: 10px;
+  width: 96%;
+  margin: 1px auto 0;
 }
 
 .function-menu {
   list-style: none;
 }
 
+ul {
+  list-style: none;
+}
+
 .navbar > ul {
   display: flex;
-  gap: 1.5rem;
+  gap: 15px;
 }
 
-.books-sec {
-  margin-top: 36px;
-}
-
-.books-sec h1 {
-  color: darkblue;
+.books-msg {
   text-align: center;
-  border: 2px dotted rgb(127, 127, 239);
+  color: darkblue;
 }
 
-.added {
+.headline {
+  margin-top: 40px;
+}
+
+form {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -44,16 +47,18 @@ body {
   min-height: 80px;
 }
 
+.date {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  margin-bottom: 20px;
+}
+
 .contact-us {
   display: flex;
   flex-direction: column;
-}
-
-.disapper {
-  top: 0;
-  position: fixed;
-  transition-duration: 0.5s ease;
-  left: -100%;
+  align-items: center;
 }
 
 footer {
@@ -77,4 +82,15 @@ footer p {
   margin-right: auto;
   margin-bottom: 20px;
   margin-top: 160px;
+}
+
+.hide {
+  position: fixed;
+  top: 0;
+  left: -110%;
+  transition-duration: 0.4s;
+}
+
+.hide.active {
+  left: 0;
 }
