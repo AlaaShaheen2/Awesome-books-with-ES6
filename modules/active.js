@@ -1,4 +1,4 @@
-class active {
+class Active {
     showAllBooks = () => {
       const booksSec = document.querySelector('.books-sec');
       const newBookSec = document.querySelector('.add-books');
@@ -39,4 +39,4 @@ class active {
       });
     };
 }
-export default active;
+export default Active;

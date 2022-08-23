@@ -1,14 +1,14 @@
 import BooksDetials from './modules/books.js';
-import active from './modules/active.js';
+import Active from './modules/active.js';
 import Time from './modules/time.js';
 
-const moreBooks = new BooksDetials();
-moreBooks.elementAdd();
+const MoreBooks = new BooksDetials();
+MoreBooks.elementAdd();
 const AddBtn = document.querySelector('.add-btn');
 AddBtn.addEventListener('click', () => {
-  moreBooks.bookNew();
+  MoreBooks.bookNew();
 });
-const Show = new active();
+const Show = new Active();
 Show.showAllBooks();
-const todaystime = new Time();
-todaystime.ShowTime();
+const Today = new Time();
+Today.ShowTime();
