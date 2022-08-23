@@ -1,7 +1,7 @@
 /* eslint-disable no-undef */
 class Time {
-  static setTime() {
-    const dt = luxon.DateTime.now()
+  ShowTime =() => {
+    const daytime = luxon.DateTime.now()
       .setLocale(navigator.language)
       .toLocaleString({
         month: 'long',
@@ -11,9 +11,7 @@ class Time {
         minute: 'numeric',
         hour12: 'false',
       });
-
-    document.querySelector('time').textContent = dt;
-  }
+    document.querySelector('.Tdate').innerHTML = daytime;
+  };
 }
-
 export default Time;
