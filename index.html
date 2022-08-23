@@ -1,0 +1,73 @@
+ <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+   
+    <link rel="stylesheet" href="index.css" />
+    <title>Awesome Books App</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <a href="index.html">Awesome Books</a>
+        <ul class="function-menu">
+          <li class="link-item">
+            <a href="#" class="list">List</a></li>
+          <li class="link-item">
+            <a href="#" class="add">Add</a></li>
+          <li class="link-item">
+            <a href="#" class="cont">Contact Us</a></li>
+        </ul>
+      </nav>
+      <div class="date">
+        <p class="Tdate"></p>
+    </div>
+    </header>
+  
+    <section class="books-sec disapper headline hide">
+      <h1 class="books-msg">All Awesome Book</h1>
+      
+      <div class="info"></div>
+    </section>
+
+    <section class="add-books disapper hide">
+      <form action="#" class="added" method="post">
+        <input type="text" class="title" placeholder="Title" />
+        <br />
+        <input type="text" class="author" placeholder="Author" />
+        <br />
+        <button type="submit" class="add-btn">Add</button>
+      </form>
+    </section>
+
+    <section class="contact-us disapper hide">
+      <h1>Contact Info</h1>
+      <p>If You have any question please be in touch with us</p>
+      <ul class="cont-info">
+        <li>
+          Email
+          <a href="mailto:alaa.m.shaheen22@gmail.com"
+            >alaa.m.shaheen22@gmail.com</a
+          >
+        </li>
+        <li>Phone Number <a href="tel:+0000000000">+0000000000</a>.</li>
+        <li>Address: Jerusalem <a href="#"> Street 983</a></li>
+      </ul>
+
+    </section>
+    <img src="Best-Reviewed-Books.jpeg" alt="" class="book-img">
+    <footer>
+      <p>&copy; Copyright 2022.</p>
+    </footer>
+    
+    <script src="https://moment.github.io/luxon/global/luxon.min.js"></script>
+    <script type="module" src="./index.js"></script>
+  </body>
+</html> 
+
