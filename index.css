@@ -1,0 +1,80 @@
+body {
+  background-image:
+    linear-gradient(
+      rgba(255, 255, 255, 0.842),
+      rgba(202, 203, 209, 0.7)
+    ),
+    url("./books.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  min-height: 80px;
+}
+
+.function-menu {
+  list-style: none;
+}
+
+.navbar > ul {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.books-sec {
+  margin-top: 36px;
+}
+
+.books-sec h1 {
+  color: darkblue;
+  text-align: center;
+  border: 2px dotted rgb(127, 127, 239);
+}
+
+.added {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 80px;
+}
+
+.contact-us {
+  display: flex;
+  flex-direction: column;
+}
+
+.disapper {
+  top: 0;
+  position: fixed;
+  transition-duration: 0.5s ease;
+  left: -100%;
+}
+
+footer {
+  margin: 10px auto 10px;
+  width: 96%;
+  border: dotted 3px rgb(2, 4, 104);
+  padding: 10px;
+}
+
+footer p {
+  color: darkblue;
+  text-align: center;
+}
+
+.book-img {
+  border-radius: 50%;
+  width: 50%;
+  opacity: 0.7;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+  margin-top: 160px;
+}
